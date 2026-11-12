@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Care Hospital</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f9fc;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        header p {
+            margin-top: 8px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #023e8a;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #90e0ef;
+        }
+
+        /* Department Menu */
+        .menu {
+            background-color: #caf0f8;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .menu a {
+            color: #023e8a;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        /* Main Content */
+        .container {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .container h2 {
+            color: #0077b6;
+            margin-bottom: 20px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-box {
+            background-color: white;
+            width: 220px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .service-box h3 {
+            color: #0077b6;
+            margin-bottom: 10px;
+        }
+
+        /* Timings */
+        .timings {
+            background-color: #e0f7fa;
+            padding: 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .timings h2 {
+            color: #0077b6;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 8px;
+        }
+
+        @media (max-width: 600px) {
+            nav a, .menu a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .service-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>City Care Hospital</h1>
+        <p>Your Health, Our Priority</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Department Menu -->
+    <div class="menu">
+        <a href="#cardiology">Cardiology</a>
+        <a href="#neurology">Neurology</a>
+        <a href="#orthopaedics">Orthopaedics</a>
+        <a href="#pediatrics">Pediatrics</a>
+    </div>
+
+    <!-- Home Section -->
+    <section class="container" id="home">
+        <h2>Welcome to City Care Hospital</h2>
+        <p>
+            City Care Hospital provides quality healthcare services
+            with experienced doctors and modern medical facilities.
+        </p>
+    </section>
+
+    <!-- About Section -->
+    <section class="container" id="about">
+        <h2>About Our Hospital</h2>
+        <p>
+            We are committed to providing excellent medical care,
+            patient safety and affordable healthcare services.
+        </p>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="container" id="doctors">
+        <h2>Our Doctors</h2>
+        <p>Our hospital has experienced and qualified medical professionals.</p>
+    </section>
+
+    <!-- Medical Services -->
+    <section class="container" id="services">
+        <h2>Our Medical Services</h2>
+
+        <div class="services">
+
+            <div class="service-box" id="cardiology">
+                <h3>Cardiology</h3>
+                <p>Heart checkups, ECG and cardiac care.</p>
+            </div>
+
+            <div class="service-box" id="neurology">
+                <h3>Neurology</h3>
+                <p>Brain, nerve and spinal cord treatments.</p>
+            </div>
+
+            <div class="service-box" id="orthopaedics">
+                <h3>Orthopaedics</h3>
+                <p>Bone, joint and fracture treatments.</p>
+            </div>
+
+            <div class="service-box" id="pediatrics">
+                <h3>Pediatrics</h3>
+                <p>Healthcare services for infants and children.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Emergency Care</h3>
+                <p>24-hour emergency medical assistance.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Laboratory</h3>
+                <p>Blood tests and diagnostic services.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Hospital Timings -->
+    <section class="timings">
+        <h2>Hospital Timings</h2>
+        <p>Monday - Saturday: 8:00 AM - 8:00 PM</p>
+        <p>Sunday: 9:00 AM - 1:00 PM</p>
+        <p>Emergency Services: Available 24/7</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: Main Road, City, Tamil Nadu</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Email: citycarehospital@example.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>City Care Hospital</h3>
+        <p>Emergency Contact: +91 98765 43210</p>
+        <p>Emergency Services Available 24/7</p>
+        <p>&copy; 2026 City Care Hospital. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
