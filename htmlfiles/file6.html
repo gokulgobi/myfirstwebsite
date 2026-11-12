@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenleaf Garden Nursery</title>
+    <style>
+        
+        { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; scroll-behavior: smooth; }
+        body { background-color: #f7faf7; color: #333; line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+        section { padding: 60px 20px; margin-bottom: 20px; background: #ffffff; border-radius: 8px; }
+        h2 { color: #2c5e3b; margin-bottom: 20px; border-bottom: 2px solid #a3cfbb; padding-bottom: 10px; }
+        
+        header { background: #2c5e3b; color: green; text-align: center; padding: 80px 20px; }
+        header h1 { font-size: 3rem; margin-bottom: 10px; }
+        header .tagline { font-size: 1.3rem; font-style: italic; color: #d1e7dd; }
+        
+        nav { background-color: #1e4129; position: sticky; top: 0; z-index: 1000; }
+        nav ul { display: flex; justify-content: center; list-style: none; flex-wrap: wrap; }
+        nav ul li a { display: block; color: white; text-decoration: none; padding: 15px 20px; font-weight: bold; }
+        nav ul li a:hover { background-color: #2c5e3b; }
+        
+        .product-categories { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .category-card { background: #f1f8f4; padding: 20px; border-left: 5px solid #2c5e3b; border-radius: 4px; }
+        
+        /* Price Table Style */
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #2c5e3b; color: white; }
+        
+        /* Special Offers Style */
+        .offers-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .offer-card { border: 2px dashed #2c5e3b; padding: 25px; background-color: #fffdf5; text-align: center; }
+        
+        /* Gallery Style */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+        .gallery-item img { width: 100%; height: 200px; object-fit: cover; border-radius: 6px; }
+        
+        /* Form Style */
+        form { max-width: 600px; margin: 0 auto; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input, .form-group select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        form button { background-color: #2c5e3b; color: white; border: none; padding: 12px 20px; font-size: 1rem; font-weight: bold; cursor: pointer; width: 100%; border-radius: 4px; }
+        form button:hover { background-color: #1e4129; }
+        
+        footer { text-align: center; padding: 30px; background-color: #2c5e3b; color: white; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Heading and Tagline Section -->
+    <header id="home">
+        <h1>Greenleaf Garden Nursery</h1>
+        <p class="tagline">Bringing nature into your home, one plant at a time.</p>
+    </header>
+
+    <!-- 2. Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#prices">Price List</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- 3. About Us Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Greenleaf Garden Nursery! Located in the heart of the community, we are dedicated to providing the highest quality indoor plants, vibrant flowering plants, fresh seeds, durable pots, and essential gardening tools.</p>
+        </section>
+
+        <!-- 4. Products Section -->
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-categories">
+                <div class="category-card">
+                    <h3>Indoor Plants</h3>
+                    <ul>
+                        <li>Money Plant</li>
+                        <li>Snake Plant</li>
+                        <li>Peace Lily</li>
+                    </ul>
+                </div>
+                <div class="category-card">
+                    <h3>Flowering Plants</h3>
+                    <ul>
+                        <li>Rose</li>
+                        <li>Jasmine</li>
+                        <li>Hibiscus</li>
+                    </ul>
+                </div>
+                <div class="category-card">
+                    <h3>Gardening Supplies</h3>
+                    <ul>
+                        <li>Pots</li>
+                        <li>Seeds</li>
+                        <li>Watering Can</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Price List Table Section -->
+        <section id="prices">
+            <h2>Price List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Snake Plant</td>
+                        <td>Indoor Plants</td>
+                        <td>$15.00</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Peace Lily</td>
+                        <td>Indoor Plants</td>
+                        <td>$18.50</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Rose Bush</td>
+                        <td>Flowering Plants</td>
+                        <td>$12.00</td>
+                        <td>Low Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Ceramic Pot</td>
+                        <td>Gardening Supplies</td>
+                        <td>$8.99</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Watering Can</td>
+                        <td>Gardening Supplies</td>
+                        <td>$10.00</td>
+                        <td>In Stock</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 6. Special Offers Section -->
+        <section id="offers">
+            <h2>Special Offers</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <h3>Perfect Combo Pack</h3>
+                    <p>Get any Indoor Plant + Pot together and save 15% on your total.</p>
+                </div>
+                <div class="offer-card">
+                    <h3>Seed Extravaganza</h3>
+                    <p>Buy 2 seed packets, get the 3rd packet absolutely FREE!</p>
+                </div>
+                <div class="offer-card">
+                    <h3>New Customer Discount</h3>
+                    <p>Get flat 10% off on your first order request.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Product Gallery Section -->
+        <section id="gallery">
+            <h2>Product Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://unsplash.com" alt="Snake plant">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://unsplash.com" alt="Roses">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://unsplash.com" alt="Gardening tools">
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Order Form Section -->
+        <section id="order">
+            <h2>Submit an Order Request</h2>
+            <form action="#" method="POST" onsubmit="alert('Order submitted.'); return false;">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="product-select">Select Product</label>
+                    <select id="product-select" required>
+                        <option value="">-- Choose a plant or tool --</option>
+                        <option value="snake-plant">Snake Plant ($15.00)</option>
+                        <option value="peace-lily">Peace Lily ($18.50)</option>
+                        <option value="rose-bush">Rose Bush ($12.00)</option>
+                        <option value="ceramic-pot">Ceramic Pot ($8.99)</option>
+                        <option value="watering-can">Watering Can ($10.00)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" min="1" max="100" value="1" required>
+                </div>
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+
