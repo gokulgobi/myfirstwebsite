@@ -1,0 +1,13 @@
+{
+  "name": "smart-queue-ai",
+  "version": "1.0.0",
+  "description": "Smart Queue AI - Intelligent Healthcare Queue & Appointment Ecosystem",
+  "scripts": {
+    "start": "npx live-server --port=8080 --open=index.html --no-browser=false",
+    "dev": "npx live-server --port=8080 --open=index.html",
+    "serve": "npx http-server . -p 8080 -o"
+  },
+  "keywords": ["healthcare", "queue", "AI"],
+  "author": "",
+  "license": "MIT"
+}
