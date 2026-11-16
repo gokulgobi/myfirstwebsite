@@ -1,19 +1,31 @@
+*Inheritanc*
+
+<!DOCTYPE html>
 <html>
-<head>
-<title>
-BIRIYANI HOUSE
-</title>
-</head>
 <body>
-<h1>RR BIRIYANI</h1>
-<p>Our biriyani is special and spice ...</p>
-<a href="https://salemrrbiryani.dotpe.in/">RR biriyani</a>
-<img src="photo 1.PNG">
 
+<h2>Inheritance Example</h2>
 
+<script>
+    class Animal {
 
+        eat() {
+            document.write("Animal is eating<br>");
+        }
+    }
 
-<a href="https://amazon.in">amazon</a>
+    class Dog extends Animal {
+
+        bark() {
+            document.write("Dog is barking");
+        }
+    }
+
+    let d = new Dog();
+
+    d.eat();
+    d.bark();
+</script>
+
 </body>
 </html>
-w3schools .com

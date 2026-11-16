@@ -1,152 +1,45 @@
+*Polymorphism*
+
+<!DOCTYPE html>
 <html>
-<title>
-Student Registration Form
-</title>
 <body>
-<h1> 1.Personal Information</h1>
-<form>
-<label>Full Name:</label>
-<input type="text" name="text">
-<br><br>
-<label>Date of Birth:</label>
-<input type="number/number/number" name="number/number/number">
-<br><br>
-<label<Gender:</label>
-<input type="radio" name="gender" value="male">
-Male
-<br>
-<input type="radio" name="gender" value="female">
-Female
-<br>
-<input type="radio" name="gender" value="transgender">
-Transgender
-<br>
-</form>
-<form action="/upload" method="post" enctype="multipart/form-data">
-<label for="profilephoto">Upload Profile Photo:</label>
-<input type="file" id="profilephoto" name="profilephoto" accept="image/*">
-<button type="submit">Submit</button>
-</form>
-<h1>Contact Information</h1>
-<form>
-<label>Email ID:</label>
-<input type="email" name="email">
-<br><br>
-<label>Phone Number:</label>
-<input type="number" name="contact">
-<br><br>
-<label>Address:</label>
-<input type="address" name="text">
-<br><br>
-<label>City:</label>
-<br>
-<input type="radio" name="city" value="chennai">
-Chennai
-<br>
-<input type="radio" name="city" value="jaipur">
-Jaipur
-<br>
-<input type="radio" name="city" value="new delhi">
-New Delhi
-<br>
-<input type="radio" name="city" value="salem">
-Salem
-<br>
-<input type="radio" name="city" value="mumbai">
-Mumbai
-<br>
-</form>
-<form>
-<label>state:</label>
-<br>
-<input type="radio" name="city" value="Tamilnadu">
-TamilNadu
-<br>
-<input type="radio" name="city" value="uttarpradersh">
-Uttar Preadesh
-<br>
-<input type="radio" name="city" value="maharastra">
-Maharastra
-<br>
-<input type="radio" name="city" value="rajasthan">
-Rajasthan
-<br>
-<input type="radio" name="city" value="uttharkhan">
-Uttharkhan
-<br>
-<br>
-<label> Pin Code:</label>
-<input type="number" name="pincode">
-<br><br>
-</form>
-<h1>Account Information</h1>
-<form>
-<label>Username:</label>
-<input type="text" name="text">
-<br><br>
-<label>Password:</label>
-<input type="password" name="password">
-<br><br>
-<label>Confirm Password:</label>
-<input type="password" name="password" required>
-<br><br>
-<span id="message" style="color:red;"></span>
-<br><br>
-<button type="submit">Submit</button>
-</form>
-<h1>Education</h1>
-<form>
-<label>Higher Qualification:</label>
-<br>
-<input type="radio" name="qualification" value="primary">
-Primary education
-<br>
 
-<input type="radio" name="qualification" value="secondary">
-Secondary education
-<br>
-<input type="radio" name="qualification" value="higher secondary">
-11&12 
-<br>
+<h2>Polymorphism Example</h2>
 
-<input type="radio" name="qualification" value="it/diplomo">
-IT/Diplomo
-<br>
-<input type="radio" name="qualification" value="UG">
-UG
-<br>
+<script>
+    class Animal {
 
-<input type="radio" name="qualification" value="PG">
-PG
-<br>
+        sound() {
+            document.write("Animal makes a sound<br>");
+        }
+    }
 
-<input type="radio" name="qualification" value="medical">
-Medical
-<br>
-<input type="radio" name="qualification" value="agri">
-Agri
-<br>
+    class Dog extends Animal {
 
-<input type="radio" name="qualification" value="ca">
-CA
-<br>
-<label>Higher Qualification:</label>
-<input type="radio" name="qualification" value="masters">
-masters
-<br><br>
-<label>College/School Name:</label>
-<input type="text" name="input">
-<br><br>
-<label>Year of Passing:</label>
-<input type="number" value="number">
-<br><br>
+        sound() {
+            document.write("Dog barks<br>");
+        }
+    }
 
+    class Cat extends Animal {
 
+        sound() {
+            document.write("Cat meows<br>");
+        }
+    class Dino extends Animal {
 
+        sound() {
+            document.write("Dino Sound<br>");
+        }
+    }
 
+    let a1 = new Dog();
+    let a2 = new Cat();
+    let a3 = new Dino();
 
+    a1.sound();
+    a2.sound();
+</script>
 
-
-
-
-
+</body>
+</html>
